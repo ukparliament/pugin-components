@@ -1,4 +1,4 @@
-#Pugin Components
+# Pugin Components
 [Pugin Components][pugin-components] is a proposed front-end dust components module prototype for a [beta.parliament.uk][beta]. It is built on [Shunter][shunter].
 
 [![Build Status][shield-travis]][info-travis] [![Test Coverage][shield-coveralls]][info-coveralls] [![License][shield-license]][info-license]
@@ -57,7 +57,7 @@ If you wish to submit a bug fix or feature, you can create a pull request and it
 ## License
 [Pugin Components][pugin-components] is licensed under the [MIT][info-license].
 
-[pugin-components]: https:
+[pugin-components]: https://github.com/ukparliament/pugin-components
 [beta]: https://beta.parliament.uk
 [shunter]: https://github.com/springernature/shunter
 [pugin]: https://github.com/ukparliament/parliament.uk-pugin
