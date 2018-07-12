@@ -1,4 +1,5 @@
 {! The status highlight css class is not hard-coded it must be passed through using a display partial.  !}
+
 <div{~s}
   {?data.display}
     {>"components__display" data=data /}

@@ -3,12 +3,11 @@
 <html lang="en">
   <head>
       <title>{title}</title>
-      <link href="https://static.parliament.uk/pugin/{pugin-version}/stylesheets/main.css" rel="stylesheet">
+      <link href="https://static.parliament.uk/pugin/1.10.0/stylesheets/main.css" rel="stylesheet">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta content="IE=edge" http-equiv="X-UA-Compatible">
       <link href="https://static.parliament.uk/assets-public/favicon.ico" rel="shortcut icon" type="image/x-icon">
-      <link href="{open-search}" rel="search" title="UK Parliament" type="application/opensearchdescription+xml">
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','#{ENV['GTM_KEY']}');</script>
+      <link href="http://beta.parliament.uk/search/opensearch" rel="search" title="UK Parliament" type="application/opensearchdescription+xml">
   </head>
   <body>
       {#header-components}
@@ -24,6 +23,31 @@
         {>"components__{name}" name=name data=data/}
       {/footer-components}
     </footer>
-      <script src="https://static.parliament.uk/pugin/{pugin-version}/javascripts/main.js"></script>
+      <script src="https://static.parliament.uk/pugin/1.10.0/javascripts/main.js"></script>
+      <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+          function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+          }({
+              instrumentationKey:"c0960a0f-30ad-4a9a-b508-14c6a4f61179",
+              cookieDomain:".parliament.uk"
+          });
+
+          window.appInsights=appInsights;
+          appInsights.trackPageView();
+      </script>
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','#{ENV['GTM_KEY']}');
+      </script>
+      <script>
+        var _prum = [['id', '598ad88fa83408af625039d6'],
+        ['mark', 'firstbyte', (new Date()).getTime()]];
+        (function()
+        { var s = document.getElementsByTagName('script')[0] , p = document.createElement('script'); p.async = 'async'; p.src = '//rum-static.pingdom.net/prum.min.js'; s.parentNode.insertBefore(p, s); }
+        )();
+    </script>
   </body>
 </html>

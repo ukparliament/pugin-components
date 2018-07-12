@@ -1,4 +1,5 @@
 {! This card should only be used in the pagination navigation bar.  !}
+
 <li {?data.active}class="active"{/data.active} data-number="{data.number}">
   {^data.active}<a href="{data.url|s}">{/data.active}
   {?data.active}<span>{/data.active}
