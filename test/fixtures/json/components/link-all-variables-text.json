@@ -9,7 +9,7 @@
         }
         ]
       },
-    "label": "common.header.label",
+    "label": "shared.header.label",
     "selector": "Bob",
     "content": "Barb"
   }

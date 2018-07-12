@@ -25,10 +25,10 @@
               },
             "contents": [
               {
-                "content": "common.header.pages-being-tested"
+                "content": "shared.header.pages-being-tested"
                 },
                 {
-                  "content": "common.header.current-website"
+                  "content": "shared.header.current-website"
                 }
             ]
           }

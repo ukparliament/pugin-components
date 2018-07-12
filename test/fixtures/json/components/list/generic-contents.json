@@ -11,16 +11,16 @@
       },
     "contents": [
       {
-        "content": "common.footer.current-website"
+        "content": "shared.footer.current-website"
         },
       {
-        "content": "common.footer.cookie-policy",
+        "content": "shared.footer.cookie-policy",
         "data": {
           "link": "/meta/cookie-policy"
         }
       },
       {
-        "content":"common.footer.data-protection-privacy"
+        "content":"shared.footer.data-protection-privacy"
       }
     ]
   }
