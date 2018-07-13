@@ -27,7 +27,7 @@ To use the package, you need to add it and save it into the list of dependencies
 npm install --save-dev pugin-components
 ```
 
-Then go to your shunter application's config (for example app.js or index.js). Add modules to the to the file, like the example below:  
+Then go to your shunter application's config (for example app.js or index.js). Add modules to the file, like the example below:  
 ```
 const app = shunter({
 
@@ -43,10 +43,11 @@ You should now be able to call on the components as if they were in a view folde
 
 ## i18n Note
 Please note, that while normally data would be passed into a string in a translation file using double moustaches which sanitises input, when passing in a URL or other form of content which you do not wish to be sanitised you must use triple moustaches or it will not be rendered correctly in the output.  
-Example
+Example  
+
 Double moustaches, such as these:
-`"cookie-policy": "<a href='{{link}}'>Cookie Policy</a>"`
-Will be rendered incorrectly as:
+`"cookie-policy": "<a href='{{link}}'>Cookie Policy</a>"`  
+Will be rendered incorrectly as:  
 `<a href='*&meta*&cookie'>Cookie Policy</a>`  
 
 Triple moustaches, such as these:
