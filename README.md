@@ -45,12 +45,12 @@ You should now be able to call on the components as if they were in a view folde
 Please note, that while normally data would be passed into a string in a translation file using double moustaches which sanitises input, when passing in a URL or other form of content which you do not wish to be sanitised you must use triple moustaches or it will not be rendered correctly in the output.  
 Example  
 
-Double moustaches, such as these:
+Double moustaches  
 `"cookie-policy": "<a href='{{link}}'>Cookie Policy</a>"`  
 Will be rendered incorrectly as:  
 `<a href='*&meta*&cookie'>Cookie Policy</a>`  
 
-Triple moustaches, such as these:
+Triple moustaches  
 `"cookie-policy": "<a href='{{{link}}}'>Cookie Policy</a>"`  
 Will be rendered correctly as:  
 `<a href='/meta/cookie'>Cookie Policy</a>`
