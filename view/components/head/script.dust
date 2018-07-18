@@ -1,25 +1,33 @@
+{! appInsights !}
+
 <script type="text/javascript">
-  var appInsights=window.appInsights||function(config){
-    function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+  var appInsights=window.appInsights||function(a){
+      function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
     }({
         instrumentationKey:"c0960a0f-30ad-4a9a-b508-14c6a4f61179",
         cookieDomain:".parliament.uk"
     });
 
-    window.appInsights=appInsights;
-    appInsights.trackPageView();
+    window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length;
+
+    appInsights.queue.push(function() {
+      requestIDNode = document.head.querySelector("meta[name=applicationinsights-request-id]");
+      if(requestIDNode) {
+        appInsights.context.operation.id = requestIDNode.content;
+      }
+    });
+
+    appInsights.trackPageView(document.title, window.location.href, {referrer: document.referrer});
+
 </script>
+
+{! Global site tag (gtag.js) - Google Analytics !}
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15845045-29"></script>
 <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','#{ENV['GTM_KEY']}');
-</script>
-<script>
-  var _prum = [['id', '598ad88fa83408af625039d6'],
-  ['mark', 'firstbyte', (new Date()).getTime()]];
-  (function()
-  { var s = document.getElementsByTagName('script')[0] , p = document.createElement('script'); p.async = 'async'; p.src = '//rum-static.pingdom.net/prum.min.js'; s.parentNode.insertBefore(p, s); }
-  )();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15845045-29');
 </script>

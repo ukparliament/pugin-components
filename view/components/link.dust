@@ -18,5 +18,7 @@
 
   {! The @t helper will pull a translation from the locales file when it finds a valid translation key, otherwise it will simply render the string. !}
 
-  {@t key="{data.content}" /}
+  {?data.content}
+    {@t key="{data.content}" /}
+  {/data.content}
 </a>
