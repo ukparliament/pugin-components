@@ -3,15 +3,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {#meta}
-    <title>{title}</title>
-    {>"components__head__meta" data=data /}
-    {>"components__head__link" data=data /}
-    {>"components__head__script" data=data /}
-    {#components}
+    {#meta.title}
+      {?.}
+        <title>{.}</title>
+      {/.}
+    {:else}
+      <title>{@t key="shared.meta.title" /}</title>
+    {/meta.title}
+    {>"components__head__meta" meta=meta /}
+    {>"components__head__link" /}
+    {>"components__head__script" /}
+    {#meta.components}
       {>"components__{name}" name=name data=data/}
-    {/components}
-    {/meta}
+    {/meta.components}
   </head>
   <body>
       {#header-components}
