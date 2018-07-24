@@ -26,6 +26,7 @@
     "walk-sync": "^0.3.2"
   },
   "dependencies": {
+    "dustmite": "^2.0.4",
     "i18n": "^0.8.3",
     "shunter": "^4.11.3"
   }
