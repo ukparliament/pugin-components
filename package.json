@@ -23,10 +23,10 @@
     "nock": "^9.3.0",
     "nyc": "^12.0.2",
     "sinon": "^5.1.0",
-    "walk-sync": "^0.3.2"
+    "walk-sync": "^0.3.2",
+    "dustmite": "^2.0.4",
   },
   "dependencies": {
-    "dustmite": "^2.0.4",
     "i18n": "^0.8.3",
     "shunter": "^4.11.3"
   }
