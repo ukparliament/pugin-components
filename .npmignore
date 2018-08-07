@@ -1,2 +1,8 @@
+.idea
 test
 coverage
+.nyc_output
+
+.dustmiteignore
+.travis.yml
+Makefile
