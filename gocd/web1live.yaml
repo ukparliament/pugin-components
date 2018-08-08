@@ -1,5 +1,5 @@
 pipelines:
-  GEM-grom:
+  pugin-components:
     group: Dependencies
     label_template: "${COUNT}"
     materials:
