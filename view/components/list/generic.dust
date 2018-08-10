@@ -1,4 +1,4 @@
-{! The type of the list can be either OL or UL. !}
+{! The type of the list can be either <ol> or <ul>. !}
 
 <{data.type}
 {?data.display}{~s}

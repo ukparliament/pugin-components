@@ -1,4 +1,4 @@
-{! This link component always needs to recieve a url for the href. However, the aria-lable, display and selector are all optional. !}
+{! This link component always needs to receive a url for the href. However, the aria-label, display and selector are all optional. !}
 
 <a href="{data.link}"
   {?data.label}aria-label="{@t key="{data.label}" /}"{/data.label}

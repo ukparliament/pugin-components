@@ -1,4 +1,4 @@
-{! This is the generic layout template which provides the fundimental HTMl for each page, as well as the ablity to loop over and render arrays of specific components.  !}
+{! This is the generic layout template which provides the fundamental HTMl for each page, as well as the ability to loop over and render arrays of specific components.  !}
 
 <!DOCTYPE html>
 <html lang="en">

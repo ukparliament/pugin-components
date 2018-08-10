@@ -1,4 +1,4 @@
-{! This card should only be used for search results on the search results page.  !}
+{! This card should only be used for search results on the search results page. !}
 
 <div class="card">
   <div class="card__details">

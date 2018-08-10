@@ -1,3 +1,5 @@
+{! Real User Monitoring (RUM) - Pingdom !}
+
 <script>
   var _prum = [['id', '598ad88fa83408af625039d6'],
   ['mark', 'firstbyte', (new Date()).getTime()]];
