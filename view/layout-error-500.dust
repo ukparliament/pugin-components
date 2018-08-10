@@ -28,13 +28,9 @@
     </div>
   </div>
 
-  <div class='status--banner__beta'>
+  <div class='status--banner'>
     <div class='container'>
-      <span class='hint'>beta</span>
-      <ul class='list--flex'>
-        <li>These pages are being tested. <a href="http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/">Give feedback</a> to help improve them.</li>
-        <li>Go to <a href="http://www.parliament.uk">current website</a></li>
-      </ul>
+      <span class='hint'>beta</span> These pages are being tested. <a href="http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/">Give feedback</a> to help improve them. Go to <a href="http://www.parliament.uk">current website</a>
     </div>
   </div>
 
@@ -66,7 +62,7 @@
     </div>
   </header>
 
-  <main id='content' tabindex='0'>
+  <main id='content'>
     <div class='section--primary'>
       <div class='container'>
         <h1>Sorry - something has gone wrong</h1>

@@ -28,13 +28,9 @@
     </div>
   </div>
 
-  <div class='status--banner__beta'>
+  <div class='status--banner'>
     <div class='container'>
-      <span class='hint'>beta</span>
-      <ul class='list--flex'>
-        <li>These pages are being tested. <a href="http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/">Give feedback</a> to help improve them.</li>
-        <li>Go to <a href="http://www.parliament.uk">current website</a></li>
-      </ul>
+      <span class='hint'>beta</span> These pages are being tested. <a href="http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/">Give feedback</a> to help improve them. Go to <a href="http://www.parliament.uk">current website</a>
     </div>
   </div>
 
@@ -72,7 +68,7 @@
         <h1>This page doesn't exist</h1>
       </div>
     </div>
-    <section id='content' tabindex='0'>
+    <section id='content'>
       <div class='container'>
         <h2>What could have caused this?</h2>
         <ul>
