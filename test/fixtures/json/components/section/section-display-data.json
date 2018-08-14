@@ -1,0 +1,17 @@
+{
+    "name": "section__section",
+    "data": {
+        "display": {
+            "data": [
+                {
+                    "component": "section",
+                    "variant": "major"
+                },
+                {
+                    "component": "section",
+                    "variant": "wide"
+                }
+            ]
+        }
+    }
+}

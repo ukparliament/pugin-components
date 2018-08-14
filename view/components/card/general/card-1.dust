@@ -1,0 +1,10 @@
+<div class="card{?data.inline}--inline{/data.inline}">
+    <div class="card__details">
+        <h{data.heading-size}>
+            <a href="{data.url}">{@t key="{data.heading-text|s}" /}</a>
+        </h{data.heading-size}>
+        {#data.paragraphs}
+            <p>{@t key="{.|s}" /}</p>
+        {/data.paragraphs}
+    </div>
+</div>
