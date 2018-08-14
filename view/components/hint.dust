@@ -1,4 +1,4 @@
-{! It is improtant to rembember that 'hint' is already hard coded on the css class, do not add hint to the display variables or it will just be repeated. !}
+{! It is important to remember that 'hint' is already hard coded on the css class, do not add hint to the display variables or it will just be repeated. !}
 
 <span class="hint{~s}
 {#data.display.data}

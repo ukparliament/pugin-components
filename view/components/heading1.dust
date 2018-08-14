@@ -1,4 +1,4 @@
-{! This will check if each possible element is present in the heading data, wrapping an h1 tag around everything rendered. !}
+{! This will check if each possible element is present in the heading data, wrapping an <h1> tag around everything rendered. !}
 {! The @t helper will pull a translation from the locales file when it finds a valid translation key and if it is given data (such as a link) that will be passed through too, otherwise it will simply render the string. !}
 
 <h1>

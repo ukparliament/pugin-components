@@ -1,4 +1,4 @@
-{! appInsights !}
+{! SDK script - appInsights !}
 
 <script type="text/javascript">
   var appInsights=window.appInsights||function(a){
