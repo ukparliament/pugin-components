@@ -11,4 +11,7 @@ describe('Section dust component', function() {
     testHelper.shunterTest('section-no-flag', 'components__section__section', 'components/section', done)
   });
 
+  it('with display data', function(done) {
+    testHelper.shunterTest('section-display-data', 'components__section__section', 'components/section', done)
+  });
 });
