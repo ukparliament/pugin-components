@@ -1,28 +1,33 @@
 {
     "name": "status__banner",
     "data": {
-      "display": {
+      "display": [
+        {
+          "name": "partials__display",
           "data": [
-          {
-            "component": "status",
-            "variant": "banner",
-            "modifier": "beta"
-          }
+            {
+              "component": "status",
+              "variant": "banner"
+            }
           ]
-        },
+        }
+      ],
       "components": [
         {
           "name": "list__generic",
           "data": {
             "type": "ul",
-            "display": {
+            "display": [
+              {
+                "name": "partials__display",
                 "data": [
-                {
-                  "component": "list",
-                  "variant": "inline"
-                }
+                  {
+                    "component": "list",
+                    "variant": "inline"
+                  }
                 ]
-              },
+              }
+            ],
             "contents": [
               {
                 "content": "shared.header.pages-being-tested"

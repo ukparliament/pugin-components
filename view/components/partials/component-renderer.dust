@@ -1,0 +1,3 @@
+{#components}
+    {>"components__{.name}" name=name data=data/}
+{/components}

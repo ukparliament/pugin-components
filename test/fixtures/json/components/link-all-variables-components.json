@@ -3,10 +3,11 @@
   "data": {
     "link": "/",
     "display": {
+        "name": "partials__display",
         "data": [
-        {
-          "component": "uk_parliament"
-        }
+          {
+            "component": "uk_parliament"
+          }
         ]
       },
     "label": "shared.header.label",

@@ -2,7 +2,5 @@
 
 <div class="container">
   <h2 class="logo">{@t key="{data.uk-parliament}" /}</h2>
-  {#data.components}
-    {>"components__{name}" name=name data=data/}
-  {/data.components}
+  {>"components__partials__component-renderer" components=data.components /}
 </div>

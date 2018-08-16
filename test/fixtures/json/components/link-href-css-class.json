@@ -3,12 +3,11 @@
   "data": {
     "link": "/",
     "display": {
-        "data": [
-        {
-          "component": "uk_parliament"
-        }
-        ]
-      },
+      "name": "partials__display",
+      "data": [{
+        "component": "uk_parliament"
+      }]
+    },
     "content": "Barb"
   }
 }
