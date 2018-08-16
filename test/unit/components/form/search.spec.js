@@ -10,4 +10,8 @@ describe('Search form dust component', function() {
   it('when global is true', function(done) {
     testHelper.shunterTest('search-global', 'components__form__search', 'components/form', done)
   });
+
+  it('with a label and value', function(done) {
+    testHelper.shunterTest('search-label-and-value', 'components__form__search', 'components/form', done)
+  });
 });

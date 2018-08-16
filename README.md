@@ -24,36 +24,44 @@ npm cache clean --force && npm test
 To use the package, you need to add it and save it into the list of dependencies in your package.json file:  
 
 ```bash
-npm install --save-dev pugin-components
+npm install --save pugin-components
 ```
 
 Then go to your shunter application's config (for example app.js or index.js). Add modules to the file, like the example below:  
 ```
 const app = shunter({
-
     path: {
         themes: __dirname
     },
     routes: config.routes,
     jsonViewParameter: 'json',
-    modules: ["pugin-components"]
+    modules: ['pugin-components']
 });
 ```  
 You should now be able to call on the components as if they were in a view folder in your root directory.  
 
 ## i18n Note
-Please note, that while normally data would be passed into a string in a translation file using double moustaches which sanitises input, when passing in a URL or other form of content which you do not wish to be sanitised you must use triple moustaches or it will not be rendered correctly in the output.  
-Example  
+Please note, that while normally data would be passed into a string in a translation file using double moustaches which sanitises input, when passing in a URL or other form of content which you do not wish to be sanitised you must use triple moustaches or it will not be rendered correctly in the output. For example:
 
-Double moustaches  
-`"cookie-policy": "<a href='{{link}}'>Cookie Policy</a>"`  
+### Double moustaches
+The following translation:
+```json
+"cookie-policy": "<a href='{{link}}'>Cookie Policy</a>"
+```  
 Will be rendered incorrectly as:  
-`<a href='*&meta*&cookie'>Cookie Policy</a>`  
+```html
+<a href='*&meta*&cookie'>Cookie Policy</a>
+```  
 
-Triple moustaches  
-`"cookie-policy": "<a href='{{{link}}}'>Cookie Policy</a>"`  
+### Triple moustaches
+The following translation:
+```json
+"cookie-policy": "<a href='{{{link}}}'>Cookie Policy</a>"
+```
 Will be rendered correctly as:  
-`<a href='/meta/cookie'>Cookie Policy</a>`
+```html
+<a href='/meta/cookie'>Cookie Policy</a>
+```
 
 ## Contributing
 If you wish to submit a bug fix or feature, you can create a pull request and it will be merged pending a code review.

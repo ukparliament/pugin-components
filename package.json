@@ -25,9 +25,7 @@
     "sinon": "^5.1.0",
     "walk-sync": "^0.3.2",
     "dustmite": "^2.0.4",
-    "shunter": "^4.11.3"
-  },
-  "dependencies": {
+    "shunter": "^4.11.3",
     "i18n": "^0.8.3"
   }
 }
