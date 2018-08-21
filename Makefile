@@ -14,6 +14,7 @@ test:
 checkout_to_release:
 	git checkout -b release $(REL_TAG)
 
-deploy_to_release: 
+deploy_to_release:
+	npm install
 	npm test
 	npm publish
