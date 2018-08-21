@@ -3,16 +3,14 @@
   "data": {
     "type": "ul",
     "display": {
-      "data": [
-        {
-          "component": "list"
-        }
-      ]
-      },
-    "contents": [
-      {
+      "name": "partials__display",
+      "data": [{
+        "component": "list"
+      }]
+    },
+    "contents": [{
         "content": "shared.footer.current-website"
-        },
+      },
       {
         "content": "shared.footer.cookie-policy",
         "data": {
@@ -20,7 +18,7 @@
         }
       },
       {
-        "content":"shared.footer.data-protection-privacy"
+        "content": "shared.footer.data-protection-privacy"
       }
     ]
   }

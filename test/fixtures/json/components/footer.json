@@ -1,35 +1,31 @@
 {
-    "name": "footer",
-    "data": {
-      "uk-parliament": "shared.footer.uk-parliament",
-      "components": [
-        {
-          "name": "list__generic",
-          "data": {
-            "type": "ul",
-            "display": {
-              "data": [
-                {
-                  "component": "list"
-                }
-              ]
-              },
-            "contents": [
-              {
-                "content": "shared.footer.current-website"
-                },
-              {
-                "content": "shared.footer.cookie-policy",
-                "data": {
-                  "link": "/meta/cookie-policy"
-                }
-              },
-              {
-                "content":"shared.footer.data-protection-privacy"
-              }
-            ]
+  "name": "footer",
+  "data": {
+    "uk-parliament": "shared.footer.uk-parliament",
+    "components": [{
+      "name": "list__generic",
+      "data": {
+        "type": "ul",
+        "display": {
+          "name": "partials__display",
+          "data": [{
+            "component": "list"
+          }]
+        },
+        "contents": [{
+            "content": "shared.footer.current-website"
+          },
+          {
+            "content": "shared.footer.cookie-policy",
+            "data": {
+              "link": "/meta/cookie-policy"
+            }
+          },
+          {
+            "content": "shared.footer.data-protection-privacy"
           }
-        }
-      ]
-    }
+        ]
+      }
+    }]
+  }
 }

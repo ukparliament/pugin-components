@@ -1,14 +1,17 @@
 {
     "name": "status__highlight",
     "data": {
-      "display": {
-          "data": [
+      "display": [
+      {
+        "name": "partials__display",
+        "data": [
           {
             "component": "status",
             "variant": "highlight"
           }
           ]
-        },
+        }
+      ],
         "components": [
             {
                 "name": "paragraph",

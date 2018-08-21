@@ -2,14 +2,12 @@
 {! An optional selector can be added. !}
 
 <div{~s}
-  {?data.display}
-    {>"components__display" data=data /}
+  {#data.display}
+    {>"components__{.name}" data=data /}
   {/data.display}
   {?data.selector}id="{data.selector}"{/data.selector}
 >
   <div class="container">
-    {#data.components}
-        {>"components__{.name}" name=name data=data/}
-    {/data.components}
+    {>"components__partials__component-renderer" components=data.components /}
   </div>
 </div>

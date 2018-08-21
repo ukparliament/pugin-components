@@ -1,7 +1,7 @@
 {! This is a partial not a component, it must be used in conjunction with a component that can take it as an option.  !}
 
 class="
-  {#data.display.data}
+  {#data}
     {?component}
       {component}
     {/component}
@@ -9,5 +9,5 @@ class="
       --{variant}
     {/variant}
     {~s}
-  {/data.display.data}
+  {/data}
 "

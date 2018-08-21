@@ -1,9 +1,9 @@
 {! The type of the list can be either <ol> or <ul>. !}
 
-<{data.type}
-{?data.display}{~s}
-  {>"components__display" data=.data /}
-{/data.display}
+<{data.type} {~s}
+  {#data.display}
+    {>"components__{.name}" data=data /}
+  {/data.display}
 >
 
 {! This list can loop over an array of components or an array of contents. !}

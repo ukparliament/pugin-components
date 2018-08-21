@@ -1,11 +1,9 @@
 {! The status highlight css class is not hard-coded it must be passed through using a display partial. !}
 
 <div{~s}
-  {?data.display}
-    {>"components__display" data=data /}
+  {#data.display}
+    {>"components__{.name}" data=data /}
   {/data.display}
 >
-  {#data.components}
-      {>"components__{.name}" name=name data=data/}
-  {/data.components}
+  {>"components__partials__component-renderer" components=data.components /}
 </div>

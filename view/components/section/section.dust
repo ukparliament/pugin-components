@@ -1,16 +1,14 @@
 {! This component can accept an option content flag !}
 
-<section 
+<section{~s}
   {?data.content-flag}
-    id="content" 
+    id="content"
   {/data.content-flag}
-  {?data.display} 
-    {>"components__display" data=data /} 
+  {#data.display}
+    {>"components__{.name}" data=data /}
   {/data.display}
-> 
+>
   <div class="container">
-    {#data.components}
-      {>"components__{name}" name=name data=data/}
-    {/data.components}
+    {>"components__partials__component-renderer" components=data.components /}
   </div>
 </section>

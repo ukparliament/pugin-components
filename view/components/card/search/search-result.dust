@@ -11,7 +11,7 @@
 
         {?data.hints}
           {#data.hints}
-            <li>{>"components__hint" data=data /}</li>
+            <li>{>"components__partials__hint" data=data /}</li>
           {/data.hints}
         {/data.hints}
         <li>
