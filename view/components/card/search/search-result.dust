@@ -7,14 +7,16 @@
     </h2>
       <ul class="list--inline">
 
-      {! This takes an array of objects, so can render multiple hints. !}
-      
-      {?data.hints}
-        {#data.hints}
-          <li>{>"components__hint" data=data /}</li>
+        {! This takes an array of objects, so can render multiple hints. !}
+
+        {?data.hints}
+          {#data.hints}
+            <li>{>"components__hint" data=data /}</li>
+          {/data.hints}
         {/data.hints}
-      {/data.hints}
-      <li class="url">{data.short-url}</li>
+        <li>
+          <span class="url">{data.short-url}</span>
+        </li>
       </ul>
     <p>{data.paragraph-content}</p>
   </div>
