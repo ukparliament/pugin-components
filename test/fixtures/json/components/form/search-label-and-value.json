@@ -1,0 +1,7 @@
+{
+    "name": "form__search",
+    "data": {
+        "value": "banana",
+        "label": "search.label"
+    }
+}

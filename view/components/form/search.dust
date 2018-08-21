@@ -1,24 +1,12 @@
-{! This the the search form used on the home page and search index page. !}
+{! This the the search form used in the header and on search index page. !}
 
-{?data.global}
-  <div class="search__global">
-    <form action="/search" method="get">
-{:else}
-  <form>
-{/data.global}
+<form {?data.search-action}action="{data.search-action}" method="get"{/data.search-action}>
   <div class="input-group">
-    <label class="sr-only" for="search_{?data.global}global{:else}box{/data.global}">{@t key="{data.label}" /}</label>
-    <input id="search_{?data.global}global{:else}box{/data.global}" maxlength="1000" name="q" pattern="^(?!.*<script|<Script).*$" required="" type="search" {?data.value}value="{data.value}"{/data.value}>
+    <label class="sr-only" for="search_box">{@t key="{data.label}" /}</label>
+    <input id="search_box" maxlength="1000" name="q" pattern="^(?!.*<script|<Script).*$" required="" type="search" {?data.value}value="{data.value}"{/data.value}>
     <button aria-label="submit search" class="btn--white" type="submit">
-
-      {! This component should be an icon. !}
-
-      {#data.components}
-        {>"components__{.name}" name=name data=data/}
-      {/data.components}
+      {>"components__icon__search" name=name/}
     </button>
   </div>
 </form>
-{?data.global}
-  </div>
-{/data.global}
+
