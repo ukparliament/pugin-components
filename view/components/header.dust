@@ -4,5 +4,11 @@
     {#data.components}
       {>"components__{name}" name=name data=data/}
     {/data.components}
+
+    {?data.search-action}
+      <div class="search__global">
+          {>"components__form__search" name=name data=data/}
+      </div>
+    {/data.search-action}
   </div>
 </header>
