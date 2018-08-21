@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <title>We're sorry, but something went wrong (502)</title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
   <link href="https://static.parliament.uk/pugin/stylesheets/main.css" rel="stylesheet">
@@ -65,7 +65,7 @@
   <main id='content'>
     <div class='section--primary'>
       <div class='container'>
-        <h1>Sorry - something has gone wrong</h1>
+        <h1>Sorry - there was a problem getting the page you requested</h1>
         <p>Please try again soon.</p>
         <p>Or go back to <a href="/">beta.parliament.uk</a></p>
       </div>
