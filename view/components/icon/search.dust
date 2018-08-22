@@ -7,3 +7,17 @@
     <polygon points="14.8 10.8 16.8 10.8 16.8 20.8 14.8 20.8" transform="translate(15.778175 15.778175)rotate(-45)translate(-15.778175 -15.778175)"></polygon>
   </g>
 </svg>
+
+{?search-toggle}
+  <svg aria-hidden="true" data-icon="close" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+    <title>Cross</title>
+    <g stroke="#fff">
+      <g>
+        <line stroke-width="2" x1="0" x2="18" y1="0" y2="18"></line>
+      </g>
+      <g>
+        <line stroke-width="2" x1="0" x2="18" y1="18" y2="0"></line>
+      </g>
+    </g>
+  </svg>
+{/search-toggle}

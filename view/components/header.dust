@@ -6,6 +6,10 @@
     {?data.search-action}
       <div class="search__global">
           {>"components__form__search" name=name data=data/}
+
+          <a aria-label="open search" class="search__global__toggle" href="/search">
+            {>"components__icon__search" name=name search-toggle="{true}"/}
+          </a>
       </div>
     {/data.search-action}
   </div>
