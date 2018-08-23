@@ -31,7 +31,7 @@
         {>"components__{name}" name=name data=data/}
       {/footer-components}
     </footer>
-    {! <script src="https://static.parliament.uk/pugin/1.10.4/javascripts/main.js"></script> !}
+    {! <script src="https://static.parliament.uk/pugin/1.10.6/javascripts/main.js"></script> !}
     {>"components__foot__script" /}
   </body>
 </html>

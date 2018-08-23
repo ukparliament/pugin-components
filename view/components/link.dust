@@ -1,11 +1,12 @@
 {! This link component always needs to receive a url for the href. However, the aria-label, display and selector are all optional. !}
 
 <a href="{data.link}"
-  {?data.label}aria-label="{@t key="{data.label}" /}"{/data.label}
+  {?data.label}{~s}aria-label="{@t key="{data.label}" /}"{/data.label}
   {#data.display}
+    {~s}
     {>"components__{.name}" data=data /}
   {/data.display}
-  {?data.selector}id="{data.selector}"{/data.selector}
+  {?data.selector}{~s}id="{data.selector}"{/data.selector}
   >
 
   {! Either an array of components or a content string can be passed in between the <a> tags. !}
