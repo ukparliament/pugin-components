@@ -1,4 +1,4 @@
-{! This component can accept an option content flag !}
+{! This component can accept an optional content flag and display partial. !}
 
 <section{~s}
   {?data.content-flag}

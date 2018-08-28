@@ -1,0 +1,21 @@
+{
+  "name": "card__generic",
+  "data": {
+    "card-type": "inline",
+    "heading": {
+      "name": "heading",
+      "data": {
+          "content": ["home.mps-heading"],
+          "size": 3,
+          "link": "/mps"
+      }
+    },
+    "count": {
+      "name": "partials__count",
+      "data": {
+        "count-number": 63,
+        "count-context": "Devs"
+      }
+    }
+  }
+}

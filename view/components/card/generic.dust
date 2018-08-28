@@ -1,0 +1,22 @@
+{! This is a generic card component which can be given a specifying card type. !}
+{! It must take a heading component, but it also has the option to take figure, paragraph, button and count partials. !}
+
+<div class="card{?data.card-type}--{data.card-type}{/data.card-type}">
+  {#data.figure}
+    {>"components__partials__figure" data=data /}
+  {/data.figure}
+  <div class="card__details">
+    {#data.heading}
+      {>"components__heading" data=data /}
+    {/data.heading}
+    {#data.paragraph}
+      {>"components__paragraph" data=data /}
+    {/data.paragraph}
+    {#data.link-button}
+      {>"components__partials__link-button" data=data /}
+    {/data.link-button}
+  </div>
+  {#data.count}
+    {>"components__partials__count" data=data /}
+  {/data.count}
+</div>
