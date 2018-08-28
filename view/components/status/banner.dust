@@ -5,7 +5,7 @@
   {#data.display}
     {>"components__{.name}" data=data /}
   {/data.display}
-  {?data.selector}id="{data.selector}"{/data.selector}
+  {?data.selector}{~s}id="{data.selector}"{/data.selector}
 >
   <div class="container">
     {>"components__partials__component-renderer" components=data.components /}
