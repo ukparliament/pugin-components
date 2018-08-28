@@ -13,7 +13,9 @@
     appInsights.queue.push(function() {
       requestIDNode = document.head.querySelector("meta[name=applicationinsights-request-id]");
       if(requestIDNode) {
-        appInsights.context.operation.id = requestIDNode.content;
+        randomAppend = [...Array(8)].map(i=>(~~(Math.random()*36)).toString(36)).join(''); // 8 chars of semi-randomness to make our page views unique within a request.
+        
+        appInsights.context.operation.id = requestIDNode.content + '.' + randomAppend;
       }
     });
 
