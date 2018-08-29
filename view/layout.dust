@@ -31,7 +31,7 @@
         {>"components__{name}" name=name data=data/}
       {/footer-components}
     </footer>
-    {! <script src="{@assetPath src="main.js"/}"></script> !}
+    <script src="{@assetPath src="main.js"/}"></script>
     {>"components__foot__script" /}
   </body>
 </html>
