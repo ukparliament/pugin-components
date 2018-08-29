@@ -5,7 +5,7 @@
   <title>We're sorry, but something went wrong (502)</title>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'>
-  <link href="https://static.parliament.uk/pugin/stylesheets/main.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
   <link href='https://static.parliament.uk/assets-public/favicon.ico' rel='shortcut icon' type='image/x-icon'>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -16,8 +16,7 @@
 
 <body>
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJS8MTG"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJS8MTG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
 
   <a class='skip-to-content' href='#content' id='skiplink'>Skip to main content</a>
@@ -82,7 +81,7 @@
     </div>
   </footer>
 
-  <script src="https://static.parliament.uk/pugin/javascripts/main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
