@@ -21,6 +21,9 @@ REPO=pugin-components
 LATEST_REL=$(GITHUB_API)/repos/$(ORG)/$(REPO)/releases
 REL_TAG=$(shell curl -s $(LATEST_REL) | jq -r '.[0].tag_name')
 
+install:
+	npm install
+
 # Installs Pugin dependencies
 pugin:
 	@echo installing pugin dependencies
@@ -39,7 +42,5 @@ test:
 checkout_to_release:
 	git checkout -b release $(REL_TAG)
 
-deploy_to_release:
-	npm install
-	npm test
+deploy_to_release: install build test
 	npm publish
