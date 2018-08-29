@@ -29,7 +29,7 @@
 
   <div class='status--banner'>
     <div class='container'>
-      <span class='hint'>beta</span> These pages are being tested. <a href="http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/">Give feedback</a> to help improve them. Go to <a href="http://www.parliament.uk">current website</a>
+        <p>These pages are being tested. <a href="http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/">Give feedback</a> to help improve them. Go to <a href="http://www.parliament.uk">current website</a></p>
     </div>
   </div>
 
