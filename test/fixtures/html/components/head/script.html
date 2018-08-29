@@ -37,11 +37,50 @@
     });
     window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length;
     appInsights.queue.push(function() {
-        requestIDNode = document.head.querySelector("meta[name=applicationinsights-request-id]");
-        if (requestIDNode) {
-            appInsights.context.operation.id = requestIDNode.content;
+        var requestIDNode = document.head.querySelector("meta[name=applicationinsights-request-id]");
+        if(requestIDNode) {
+            var parentID, firstChar, lastChar, generatedID, operationID;
+            parentID = requestIDNode.content;
+            firstChar = parentID.charAt(0);
+            if(firstChar !== '|') {
+                return;
+            }
+            lastChar = parentID.charAt(parentID.length - 1);
+            if(lastChar !== '.' && lastChar !== '_') {
+                parentID += '.';
+            }
+            generatedID = ukparliamentAppinsightsRandomIdGenerator();
+            parentID += generatedID + '.';
+            operationID = ukparliamentAppinsightsGetOperationId(parentID);
+            appInsights.context.operation.id = operationID;
+            appInsights.context.operation.parentID = parentID;
         }
     });
+
+    function ukparliamentAppinsightsRandomIdGenerator() {
+        var base64chars, result, random;
+        base64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+        result = "";
+        random = Math.random() * 1073741824;
+        while (random > 0) {
+            var char = base64chars.charAt(random % 64);
+            result += char;
+            random = Math.floor(random / 64);
+        }
+        return result;
+    }
+
+    function ukparliamentAppinsightsGetOperationId(id) {
+        var dotPosition, underscorePosition, rootEnd, rootStart;
+        dotPosition = id.indexOf('.');
+        underscorePosition = id.indexOf('_');
+        rootEnd = Math.min(dotPosition, underscorePosition);
+        if (rootEnd < 0) {
+            rootEnd = id.length;
+        }
+        rootStart = 1;
+        return id.substr(rootStart, rootEnd - rootStart);
+    }
     appInsights.trackPageView(document.title, window.location.href, {
         referrer: document.referrer
     });
