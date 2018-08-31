@@ -11,7 +11,9 @@
 
   {! Either an array of components or a content string can be passed in between the <a> tags. !}
 
-  {>"components__partials__component-renderer" components=data.components /}
+  {#data.components}
+      {>"components__{.name}" name=name data=data/}
+  {/data.components}
 
   {! The @t helper will pull a translation from the locales file when it finds a valid translation key, otherwise it will simply render the string. !}
 

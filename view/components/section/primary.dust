@@ -6,6 +6,9 @@
 
     {! This component should only be used if wanted at the top of the main section. !}
 
-    {>"components__partials__component-renderer" components=data.components /}
+    {#data.components}
+        {>"components__{.name}" name=name data=data/}
+    {/data.components}
+
   </div>
 </div>

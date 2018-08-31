@@ -1,0 +1,15 @@
+{
+  "name": "section__primary",
+  "data": {
+    "content-flag": "true",
+    "components": [
+      {
+        "name": "link",
+        "data": {
+          "link": "http://example.com",
+          "content": "hello"
+        }
+      }
+    ]
+  }
+}

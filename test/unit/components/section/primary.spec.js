@@ -11,4 +11,9 @@ describe('Section Primary dust component', function() {
     testHelper.shunterTest('primary-no-flag', 'components__section__primary', 'components/section', done)
   });
 
+  // This test is checking the nesting of a component rendering component within a primary section (also a component rendering component).
+  it('when containing a link, should return html from the dust component', function(done) {
+      testHelper.shunterTest('primary-with-link', 'components__section__primary', 'components/section', done)
+  });
+
 });

@@ -9,6 +9,8 @@
   {/data.display}
 >
   <div class="container">
-    {>"components__partials__component-renderer" components=data.components /}
+    {#data.components}
+        {>"components__{.name}" name=name data=data/}
+    {/data.components}
   </div>
 </section>
