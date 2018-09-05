@@ -1,0 +1,10 @@
+<dl class="list--definition">
+    {#data.items}
+        {#term}
+            <dt>{@t key="{content|s}" data=data /}</dt> {~s}
+            {#description}
+            <dd>{@t key="{content|s}" data=data /}</dd> {~s}
+            {/description}
+        {/term}
+    {/data.items}
+</dl>

@@ -1,0 +1,52 @@
+{
+  "name": "list__description",
+  "data": {
+    "items": [
+      {
+        "term": [
+          {
+            "content" : "telephone"
+          }
+        ],
+        "description": [
+          {
+            "content" : "012349586"
+          },
+          {
+            "content" : "097432342"
+          }
+        ]
+      },
+      {
+        "term": [
+          {
+            "content" : "email"
+          }
+        ],
+        "description": [
+          {
+            "content" : "hello@gmail.com"
+          },
+          {
+            "content" : "hello@example.com"
+          }
+        ]
+      },
+      {
+        "term": [
+          {
+            "content" : "name"
+          }
+        ],
+        "description": [
+          {
+            "content" : "Bob"
+          },
+          {
+            "content" : "Sue"
+          }
+        ]
+      }
+    ]
+  }
+}
