@@ -1,7 +1,9 @@
 <header>
   <div class="container">
     {! Only pass in components which need to be surrounded by header tags. !}
-    {>"components__partials__component-renderer" components=data.components /}
+    {#data.components}
+        {>"components__{.name}" name=name data=data/}
+    {/data.components}
 
     {?data.search-action}
       <div class="search__global">
