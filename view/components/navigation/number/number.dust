@@ -9,7 +9,9 @@
 
       {! These components need to be number cards. !}
 
-      {>"components__partials__component-renderer" components=data.components /}
+      {#data.components}
+          {>"components__{.name}" name=name data=data/}
+      {/data.components}
     </ol>
     {?data.next-url}
       <a class="navigation-control" href="{data.next-url|s}">{@t key="shared.number-navigation.next" /}</a>

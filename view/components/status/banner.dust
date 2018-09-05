@@ -8,6 +8,8 @@
   {?data.selector}{~s}id="{data.selector}"{/data.selector}
 >
   <div class="container">
-    {>"components__partials__component-renderer" components=data.components /}
+    {#data.components}
+        {>"components__{.name}" name=name data=data/}
+    {/data.components}
   </div>
 </div>
