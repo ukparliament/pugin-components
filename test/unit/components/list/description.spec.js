@@ -26,4 +26,8 @@ describe('Description list dust component', function() {
     it('when given an item with a translation key with data, should return html from the dust component', function(done) {
         testHelper.shunterTest('description-translation-key-data', 'components__list__description', 'components/list', done)
     });
+
+    it('when given an item is not given a term, should return html from the dust component', function(done) {
+        testHelper.shunterTest('description-no-term', 'components__list__description', 'components/list', done)
+    });
 });

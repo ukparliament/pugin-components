@@ -3,15 +3,14 @@
   "data": {
     "items": [
       {
-        "term": [
+        "term":
           {
             "content" : "shared.header.cookie-banner-text",
             "data":
             {
               "link": "www.example.com"
             }
-          }
-        ],
+          },
         "description": [
           {
             "content" : "012349586"

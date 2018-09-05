@@ -3,11 +3,9 @@
   "data": {
     "items": [
       {
-        "term": [
-          {
-            "content" : "telephone"
-          }
-        ],
+        "term": {
+          "content": "telephone"
+        },
         "description": [
           {
             "content" : "012349586"
@@ -18,11 +16,10 @@
         ]
       },
       {
-        "term": [
+        "term":
           {
             "content" : "email"
-          }
-        ],
+          },
         "description": [
           {
             "content" : "hello@gmail.com"
@@ -33,11 +30,10 @@
         ]
       },
       {
-        "term": [
+        "term":
           {
             "content" : "name"
-          }
-        ],
+          },
         "description": [
           {
             "content" : "Bob"

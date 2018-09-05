@@ -3,11 +3,10 @@
   "data": {
     "items": [
       {
-        "term": [
+        "term":
           {
             "content" : "telephone"
-          }
-        ],
+          },
         "description": [
           {
             "content" : "012349586"
