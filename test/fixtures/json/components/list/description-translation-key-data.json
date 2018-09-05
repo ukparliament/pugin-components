@@ -1,0 +1,22 @@
+{
+  "name": "list__description",
+  "data": {
+    "items": [
+      {
+        "term":
+          {
+            "content" : "shared.header.cookie-banner-text",
+            "data":
+            {
+              "link": "www.example.com"
+            }
+          },
+        "description": [
+          {
+            "content" : "012349586"
+          }
+        ]
+      }
+    ]
+  }
+}
