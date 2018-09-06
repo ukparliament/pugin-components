@@ -1,0 +1,11 @@
+{
+  "open-graph": {
+    "title": "Page title",
+    "original-url": "http://www.example.com",
+    "image-url": "http://wwww.image_url.com",
+    "image-width": "1200",
+    "image-height": "600",
+    "twitter-card": "summary"
+  }
+}
+
