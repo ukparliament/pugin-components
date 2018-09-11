@@ -1,0 +1,14 @@
+{! This is a link which is styled as a button. It must be given an href value, but display and download are optional. !}
+
+<a{~s}
+  {#data.display}
+    {>"components__{.name}" data=data /}{~s}
+  {/data.display}
+  {?data.download}
+    download{~s}
+  {/data.download}
+
+  {! There is no translation function as currently the text in the links are being set from the back end !}
+
+  href="{data.link}">{data.text}
+</a>

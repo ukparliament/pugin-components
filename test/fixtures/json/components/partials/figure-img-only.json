@@ -1,0 +1,23 @@
+{
+  "name": "partials__figure",
+  "data": {
+    "display": {
+      "name": "partials__display",
+      "data": [
+        {
+          "component": "avatar",
+          "variant": "round"
+        }
+      ]
+    },
+    "link": "https://DianneAbbot/image.com",
+    "alt-text": "Here is a picture of Dianne Abbot",
+    "source": "https://and-yet-another-photo.uk",
+    "figcaption": {
+      "content": "image.image-of",
+      "data": {
+        "image-name": "Dianne Abbott"
+        }
+    }
+  }
+}

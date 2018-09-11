@@ -1,3 +1,5 @@
+{! This hero component takes and wraps an array of other components. It also has an optional content flag. !}
+
 <div class="hero" {?data.content-flag} id="content" {/data.content-flag}>
     <div class="container">
         {#data.components}

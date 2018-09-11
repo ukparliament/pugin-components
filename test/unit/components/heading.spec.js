@@ -11,4 +11,8 @@ describe('Heading dust component', function() {
     testHelper.shunterTest('heading-string', 'components__heading', 'components', done)
   });
 
+  it('when given a link should return html with and a tag from the dust component', function(done){
+    testHelper.shunterTest('heading-link', 'components__heading', 'components', done)
+  });
+
 });

@@ -1,0 +1,16 @@
+{
+  "name": "partials__link-button",
+  "data": {
+    "display": {
+      "name": "partials__display",
+      "data": [
+        {
+          "component": "btn",
+          "variant": "primary"
+        }
+      ]
+    },
+    "link": "https://www.parliament.com",
+    "text": "Cool bananas"
+  }
+}
