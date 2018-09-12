@@ -3,13 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {#meta.title}
-      {?.}
-        <title>{.}</title>
-      {/.}
-    {:else}
-      <title>{@t key="shared.meta.title" /}</title>
-    {/meta.title}
     {>"components__head__meta" meta=meta /}
     {>"components__head__link" /}
     {>"components__head__script" /}
