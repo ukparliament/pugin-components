@@ -1,6 +1,6 @@
 {#meta.title}
   {?.}
-    <title>{.}</title>
+    <title>{@t key="{.|s}" /}</title>
   {/.}
 {:else}
   <title>{@t key="shared.meta.title" /}</title>
