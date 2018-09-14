@@ -1,0 +1,4 @@
+{
+  "type": "application/n-triples",
+  "href": "http://localhost:3030/api/v1/statutory_instruments.nt"
+}

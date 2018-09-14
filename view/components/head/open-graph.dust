@@ -1,0 +1,7 @@
+<meta content="{open-graph.title}" property="og:title">
+<meta content="website" property="og:type">
+<meta content="{open-graph.original-url}" property="og:url">
+<meta content="{open-graph.image-url}" property="og:image">
+<meta content="{open-graph.image-width}" property="og:image:width">
+<meta content="{open-graph.image-height}" property="og:image:height">
+<meta content="{open-graph.twitter-card}" name="twitter:card">
