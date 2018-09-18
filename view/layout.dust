@@ -3,16 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {#meta.title}
-      {?.}
-        <title>{.}</title>
-      {/.}
-    {:else}
-      <title>{@t key="shared.meta.title" /}</title>
-    {/meta.title}
     {>"components__head__meta" meta=meta /}
     {>"components__head__link" /}
     {>"components__head__script" /}
+    {#meta.data-alternates}
+        {>"components__head__data-alternates" /}
+    {/meta.data-alternates}
+    {>"components__head__open-graph" open-graph=meta.open-graph /}
+
     {#meta.components}
       {>"components__{name}" name=name data=data/}
     {/meta.components}

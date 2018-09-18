@@ -34,7 +34,7 @@ build: pugin
 	@mkdir -p resources/css resources/js
 	@$(NODE_SASS) --output-style compressed -o resources/css $(STYLESHEETS_LOC)
 	@$(POSTCSS) -r resources/css/* --no-map
-	@$(UGLIFY_JS) $(LEAFLET) $(LEAFLET_FULLSCREEN) $(JAVASCRIPTS_LOC)/*.js -m -c -o resources/js/main.js
+	@$(UGLIFY_JS) $(JAVASCRIPTS_LOC)/_helpers.js $(JAVASCRIPTS_LOC)/cookie_disclaimer.js $(JAVASCRIPTS_LOC)/search.js -m -c -o resources/js/main.js
 
 test:
 	npm test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js

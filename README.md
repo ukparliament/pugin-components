@@ -4,8 +4,20 @@
 [![Build Status][shield-travis]][info-travis] [![Test Coverage][shield-coveralls]][info-coveralls] [![License][shield-license]][info-license]
 
 ### Contents
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Requirements](#requirements)
+- [Quick start](#quick-start)
+- [Using the Library](#using-the-library)
+- [i18next Note](#i18next-note)
+  - [Double moustaches](#double-moustaches)
+  - [Prefixing the variable name with a hyphen](#prefixing-the-variable-name-with-a-hyphen)
+- [Contributing](#contributing)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Requirements
 [Pugin Components][pugin-components] requires the following:
@@ -40,8 +52,8 @@ const app = shunter({
 ```  
 You should now be able to call on the components as if they were in a view folder in your root directory.  
 
-## i18n Note
-Please note, that while normally data would be passed into a string in a translation file using double moustaches which sanitises input, when passing in a URL or other form of content which you do not wish to be sanitised you must use triple moustaches or it will not be rendered correctly in the output. For example:
+## i18next Note
+Passing in data to the translation with double moustaches sanitises input. If you wish to pass in a URL or other data that you do not wish to be sanitised, for it be rendered correctly you must prefix the variable name with a hyphen. For example:
 
 ### Double moustaches
 The following translation:
@@ -53,10 +65,10 @@ Will be rendered incorrectly as:
 <a href='*&meta*&cookie'>Cookie Policy</a>
 ```  
 
-### Triple moustaches
+### Prefixing the variable name with a hyphen
 The following translation:
 ```json
-"cookie-policy": "<a href='{{{link}}}'>Cookie Policy</a>"
+"cookie-policy": "<a href='{{-link}}'>Cookie Policy</a>"
 ```
 Will be rendered correctly as:  
 ```html
