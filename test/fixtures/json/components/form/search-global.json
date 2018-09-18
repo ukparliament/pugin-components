@@ -1,6 +1,6 @@
 {
     "name": "form__search",
     "data": {
-        "search-action": "/search"
+        "global": true
     }
 }
