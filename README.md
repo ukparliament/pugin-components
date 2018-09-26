@@ -1,5 +1,5 @@
 # Pugin Components
-[Pugin Components][pugin-components] is a proposed front-end dust components module prototype for [beta.parliament.uk][beta]. It is built on [Shunter][shunter].
+[Pugin Components][pugin-components] is a front-end dust component library for [beta.parliament.uk][beta]. It is built on [Shunter][shunter].
 
 [![Build Status][shield-travis]][info-travis] [![Test Coverage][shield-coveralls]][info-coveralls] [![License][shield-license]][info-license]
 
@@ -11,6 +11,7 @@
 - [Requirements](#requirements)
 - [Quick start](#quick-start)
 - [Using the Library](#using-the-library)
+- [Running tests on single files or directories](#running-tests-on-single-files-or-directories)
 - [i18next Note](#i18next-note)
   - [Double moustaches](#double-moustaches)
   - [Prefixing the variable name with a hyphen](#prefixing-the-variable-name-with-a-hyphen)
@@ -51,6 +52,19 @@ const app = shunter({
 });
 ```  
 You should now be able to call on the components as if they were in a view folder in your root directory.  
+
+## Running tests on single files or directories
+The `npm run testfocus` command will let you specify a directory or file of tests to be run.
+
+For example, to run one test:
+```bash
+npm run testfocus test/unit/components/card/generic.spec.js
+```
+
+Or to run a directory of tests:
+```bash
+npm run testfocus test/unit/components/card/
+```
 
 ## i18next Note
 Passing in data to the translation with double moustaches sanitises input. If you wish to pass in a URL or other data that you do not wish to be sanitised, for it be rendered correctly you must prefix the variable name with a hyphen. For example:
