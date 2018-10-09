@@ -12,6 +12,12 @@
     {#data.paragraph}
       {>"components__paragraph" data=data /}
     {/data.paragraph}
+    {#data.list-description}
+      {>"components__list__description" data=data /}
+    {/data.list-description}
+    {#data.list-generic}
+      {>"components__list__generic" data=data /}
+    {/data.list-generic}
     {#data.link-button}
       {>"components__partials__link-button" data=data /}
     {/data.link-button}
