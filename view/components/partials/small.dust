@@ -1,0 +1,1 @@
+<small>{@t key="{data.content|s}" data=data /}</small>

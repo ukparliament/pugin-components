@@ -1,0 +1,39 @@
+{
+  "name": "card__generic",
+  "data": {
+    "card-type": "inline",
+    "heading": {
+      "name": "heading",
+      "data": {
+          "content": ["home.mps-heading"],
+          "size": 3,
+          "link": "/mps"
+      }
+    },
+    "list-generic": {
+      "name": "list__generic",
+      "data": {
+        "type": "ul",
+        "display": {
+          "name": "partials__display",
+          "data": [{
+            "component": "list"
+          }]
+        },
+        "contents": [{
+            "content": "shared.footer.current-website"
+          },
+          {
+            "content": "shared.footer.cookie-policy",
+            "data": {
+              "link": "/meta/cookie-policy"
+            }
+          },
+          {
+            "content": "shared.footer.data-protection-privacy"
+          }
+        ]
+      }
+    }
+  }
+}

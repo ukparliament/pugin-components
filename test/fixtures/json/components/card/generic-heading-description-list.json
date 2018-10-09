@@ -1,0 +1,32 @@
+{
+  "name": "card__generic",
+  "data": {
+    "card-type": "inline",
+    "heading": {
+      "name": "heading",
+      "data": {
+          "content": ["home.mps-heading"],
+          "size": 3,
+          "link": "/mps"
+      }
+    },
+    "list-description": {
+      "name": "list__description",
+      "data": {
+        "items": [
+          {
+            "term":
+              {
+                "content" : "telephone"
+              },
+            "description": [
+              {
+                "content" : "012349586"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
