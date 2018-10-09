@@ -1,0 +1,21 @@
+{
+  "name": "card__generic",
+  "data": {
+    "card-type": "inline",
+    "small": {
+      "name": "partials__small",
+      "data": {
+        "content": "home.guides",
+        "link": "/guides"
+      }
+    },
+    "heading": {
+      "name": "heading",
+      "data": {
+          "content": ["home.mps-heading"],
+          "size": 3,
+          "link": "/mps"
+      }
+    }
+  }
+}

@@ -35,4 +35,8 @@ describe('Generic card dust component', function() {
     testHelper.shunterTest('generic-heading-generic-list', 'components__card__generic', 'components/card', done)
   });
 
+  it('when given a small and heading it should return html from the dust component', function(done) {
+    testHelper.shunterTest('generic-small-heading', 'components__card__generic', 'components/card', done)
+  });
+
 });

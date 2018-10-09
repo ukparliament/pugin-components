@@ -6,6 +6,9 @@
     {>"components__partials__figure" data=data /}
   {/data.figure}
   <div class="card__details">
+    {#data.small}
+      {>"components__partials__small" data=data /}
+    {/data.small}
     {#data.heading}
       {>"components__heading" data=data /}
     {/data.heading}
