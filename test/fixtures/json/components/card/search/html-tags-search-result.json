@@ -1,0 +1,25 @@
+{
+  "name": "card__search__search-result",
+  "data": {
+      "heading-text": "<b>Result</b> 1",
+      "url": "some-url",
+      "hints": [
+        {
+          "name": "partials__hint",
+          "data": {
+            "display": {
+              "data": [
+                {
+                "component": "theme",
+                "variant": "grey-4",
+                "content": "pdf"
+              }
+            ]
+            }
+          }
+        }
+      ],
+      "short-url": "some <b>shorter</b> url",
+      "paragraph-content": "Some <b>text</b>"
+  }
+}
