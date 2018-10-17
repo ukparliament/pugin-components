@@ -6,4 +6,10 @@ describe('Search result card dust component', function() {
   it('should return html from the dust component', function(done) {
     testHelper.shunterTest('search-result', 'components__card__search__search-result', 'components/card/search', done)
   });
+
+  context('unescaping html', function(done) {
+    it('should return html from the dust component', function(done) {
+      testHelper.shunterTest('html-tags-search-result', 'components__card__search__search-result', 'components/card/search', done)
+    });
+  });
 });
