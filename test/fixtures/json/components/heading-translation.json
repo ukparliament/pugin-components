@@ -1,12 +1,11 @@
 {
     "name": "heading",
     "data": {
-        "translation": {
-          "key": "search.count",
-          "data": {
-            "count": "850"
-          }
-        },
+        "content": "search.count",
+        "data": {
+          "count": "850"
+        }
+        ,
         "size": 2
     }
 }

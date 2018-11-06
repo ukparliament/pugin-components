@@ -5,9 +5,8 @@
     "heading": {
       "name": "heading",
       "data": {
-          "content": ["home.mps-heading"],
-          "size": 3,
-          "link": "/mps"
+          "content": "home.mps-heading",
+          "size": 3
       }
     },
     "list-description": {
