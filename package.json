@@ -1,6 +1,6 @@
 {
   "name": "pugin-components",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "A shunter npm package containing dust components for beta.parliament.uk",
   "main": "index.js",
   "scripts": {

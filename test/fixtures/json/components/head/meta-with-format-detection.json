@@ -1,0 +1,8 @@
+{
+  "layout": {
+    "template": "layout"
+  },
+  "meta": {
+    "disable-format-detection": true
+  }
+}
