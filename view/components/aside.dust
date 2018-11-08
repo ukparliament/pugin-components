@@ -1,0 +1,6 @@
+<aside>
+  {! Only pass in components which need to be surrounded by aside tags. !}
+  {#data.components}
+    {>"components__{.name}" name=name data=data/}
+  {/data.components}
+</aside>

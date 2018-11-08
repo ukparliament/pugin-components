@@ -1,0 +1,21 @@
+{! This component can accept an optional content flag and display partial. !}
+
+<article id="content">
+
+  {#data.header}
+    {>"components__{.name}" name=name data=data/}
+  {/data.header}
+
+  <div role="main">
+    <div class="container">
+      {#data.main}
+        {>"components__{.name}" name=name data=data/}
+      {/data.main}
+    </div>
+  </div>
+
+  {#data.footer}
+    {>"components__{.name}" name=name data=data/}
+  {/data.footer}
+
+</article>

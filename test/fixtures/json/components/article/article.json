@@ -1,0 +1,185 @@
+{
+  "name": "article__article",
+  "data": {
+    "header": [{
+      "name": "header",
+      "data": {
+        "components": [{
+          "name": "heading1",
+          "data": {
+            "subheading": {
+              "content": "article.heading.subheading"
+            },
+            "heading": {
+              "content": "article.heading.content"
+            },
+            "context": {
+              "content": "article.heading.context"
+            }
+          }
+        }, {
+          "name": "paragraph",
+          "data": [{
+            "content": "article.summary.content-1"
+          }, {
+            "content": "article.summary.content-2"
+          }]
+        }, {
+          "name": "list__description",
+          "data": {
+            "meta": true,
+            "items": [{
+              "term": {
+                "content": "article.meta.publishers.label"
+              },
+              "description": [{
+                "content": "article.meta.publishers.content"
+              }]
+            }, {
+              "term": {
+                "content": "article.meta.date-published.label"
+              },
+              "description": [{
+                "content": "article.meta.date-published.content"
+              }]
+            }, {
+              "term": {
+                "content": "article.meta.found-in.label"
+              },
+              "description": [{
+                "content": "article.meta.found-in.content"
+              }]
+            }]
+          }
+        }]
+      }
+    }],
+    "main": [{
+      "name": "partials__figure",
+      "data": {
+        "display": {
+          "name": "partials__display"
+        },
+        "link": "#",
+        "source-media": "(min-width: 480px)",
+        "source-srcset": "https://api-parliament-uk.azure-api.net/photo/0qLRSwb3.jpeg?crop=CU_5:2&width=732&quality=80, https://api-parliament-uk.azure-api.net/photo/0qLRSwb3.jpeg?crop=CU_5:2&width=1464&quality=80 2x",
+        "source-srcset-2": "https://api-parliament-uk.azure-api.net/photo/0qLRSwb3.jpeg?crop=MCU_3:2&width=444&quality=80, https://api-parliament-uk.azure-api.net/photo/0qLRSwb3.jpeg?crop=MCU_3:2&width=888&quality=80 2x",
+        "alt-text": "Margot James",
+        "source": "https://api-parliament-uk.azure-api.net/photo/0qLRSwb3.jpeg?width=732&quality=80",
+        "figcaption": {
+          "content": "article.figcaption"
+        }
+      }
+    }, {
+      "name": "paragraph",
+      "data": [{
+        "content": "article.paragraph-1"
+      }, {
+        "content": "article.paragraph-2"
+      }, {
+        "content": "article.paragraph-3"
+      }, {
+        "content": "article.paragraph-4"
+      }, {
+        "content": "article.paragraph-5"
+      }]
+    }, {
+      "name": "list__generic",
+      "data": {
+        "type": "ol",
+        "contents": [{
+          "content": "article.list-item-1"
+        }, {
+          "content": "article.list-item-2"
+        }, {
+          "content": "article.list-item-3"
+        }, {
+          "content": "article.list-item-4"
+        }]
+      }
+    }, {
+      "name": "list__generic",
+      "data": {
+        "type": "ul",
+        "contents": [{
+          "content": "article.list-item-1"
+        }, {
+          "content": "article.list-item-2"
+        }, {
+          "content": "article.list-item-3"
+        }, {
+          "content": "article.list-item-4"
+        }]
+      }
+    }, {
+      "name": "paragraph",
+      "data": [{
+        "content": "article.paragraph-6"
+      }]
+    }],
+    "footer": [{
+      "name": "footer",
+      "data": {
+        "components": [{
+          "name": "aside",
+          "data": {
+            "components": [{
+              "name": "heading",
+              "data": {
+                "size": 2,
+                "content": "article.collection-1.title"
+              }
+            }, {
+              "name": "list__generic",
+              "data": {
+                "type": "ol",
+                "contents": [{
+                  "content": "article.collection-1.article-1"
+                }, {
+                  "content": "article.collection-1.article-2"
+                }, {
+                  "content": "article.collection-1.article-3"
+                }]
+              }
+            }, {
+              "name": "heading",
+              "data": {
+                "size": 2,
+                "content": "article.collection-2.title"
+              }
+            }, {
+              "name": "list__generic",
+              "data": {
+                "type": "ol",
+                "contents": [{
+                  "content": "article.collection-2.article-1"
+                }, {
+                  "content": "article.collection-2.article-2"
+                }, {
+                  "content": "article.collection-2.article-3"
+                }]
+              }
+            }]
+          }
+        },
+        {
+          "name": "list__generic",
+          "data": {
+            "type": "ul",
+            "display": {
+              "name": "partials__display",
+              "data": [{
+                "component": "utilities"
+              }]
+            },
+            "contents": [{
+              "content": "article.utilities.print"
+            }, {
+              "content": "article.utilities.download"
+            }]
+          }
+        }]
+      }
+    }]
+  }
+}

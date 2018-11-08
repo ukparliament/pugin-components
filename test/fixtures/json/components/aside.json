@@ -1,0 +1,42 @@
+{
+  "name": "aside",
+  "data": {
+    "components": [{
+      "name": "heading",
+      "data": {
+        "size": 2,
+        "content": "article.collection-1.title"
+      }
+    }, {
+      "name": "list__generic",
+      "data": {
+        "type": "ol",
+        "contents": [{
+          "content": "article.collection-1.article-1"
+        }, {
+          "content": "article.collection-1.article-2"
+        }, {
+          "content": "article.collection-1.article-3"
+        }]
+      }
+    }, {
+      "name": "heading",
+      "data": {
+        "size": 2,
+        "content": "article.collection-2.title"
+      }
+    }, {
+      "name": "list__generic",
+      "data": {
+        "type": "ol",
+        "contents": [{
+          "content": "article.collection-2.article-1"
+        }, {
+          "content": "article.collection-2.article-2"
+        }, {
+          "content": "article.collection-2.article-3"
+        }]
+      }
+    }]
+  }
+}
