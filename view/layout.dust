@@ -18,19 +18,20 @@
   </head>
   <body>
     <script src="{@assetPath src="bodyClass.js"/}"></script>
-      {#header-components}
-        {>"components__{name}" name=name data=data/}
-      {/header-components}
+    {#header-components}
+      {>"components__{name}" name=name data=data/}
+    {/header-components}
+
     <main>
       {#main-components}
         {>"components__{name}" name=name data=data/}
       {/main-components}
     </main>
-    <footer>
-      {#footer-components}
-        {>"components__{name}" name=name data=data/}
-      {/footer-components}
-    </footer>
+
+    {#footer-components}
+      {>"components__{name}" name=name data=data/}
+    {/footer-components}
+
     <script src="{@assetPath src="main.js"/}"></script>
     {>"components__foot__script" /}
     {#foot.components}

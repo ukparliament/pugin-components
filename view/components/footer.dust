@@ -1,8 +1,8 @@
-{! This container is used as the page footer. !}
-
-<div class="container">
-  <h2 class="logo">{@t key="{data.uk-parliament}" /}</h2>
-  {#data.components}
+<footer>
+  <div class="container">
+    {! Only pass in components which need to be surrounded by footer tags. !}
+    {#data.components}
       {>"components__{.name}" name=name data=data/}
-  {/data.components}
-</div>
+    {/data.components}
+  </div>
+</footer>
