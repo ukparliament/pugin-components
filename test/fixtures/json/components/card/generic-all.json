@@ -28,9 +28,8 @@
     "heading": {
       "name": "heading",
       "data": {
-          "content": ["Dianne Abbot"],
-          "size": 2,
-          "link": "https://www.parliament.com"
+          "content": "Dianne Abbot",
+          "size": 2
       }
     },
     "paragraph": {
