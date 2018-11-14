@@ -53,7 +53,7 @@ const app = shunter({
 ```  
 You should now be able to call on the components as if they were in a view folder in your root directory.  
 
-## Running specific versions of the brand
+## Updating versions of Pugin assets (CSS/JS)
 The `make build` task compiles the css and javascript assets from [Pugin][pugin]. This task is used when you would like to specify a different tag release of [Pugin][pugin] as to what was originally installed.  
 
 For example, in the package.json amend `parliamentuk-pugin` to another tag release:
