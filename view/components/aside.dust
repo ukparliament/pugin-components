@@ -1,6 +1,17 @@
 <aside>
   {! Only pass in components which need to be surrounded by aside tags. !}
-  {#data.components}
-    {>"components__{.name}" name=name data=data/}
-  {/data.components}
+
+  {#data}
+    {#heading}
+      {>"components__heading" data=data /}
+    {/heading}
+
+    {#paragraph}
+      {>"components__paragraph" data=data /}
+    {/paragraph}
+
+    {#list__generic}
+      {>"components__list__generic" data=data /}
+    {/list__generic}
+  {/data}
 </aside>

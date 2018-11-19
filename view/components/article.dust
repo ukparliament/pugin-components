@@ -1,0 +1,43 @@
+<article id="content">
+  {! Only pass in components which need to be surrounded by article tags. !}
+
+  <header>
+    <div class="container">
+      {#data.heading}
+        {>"components__heading1" data=data /}
+      {/data.heading}
+
+      {#data.paragraph}
+        {>"components__paragraph" data=data /}
+      {/data.paragraph}
+
+      {#data.list__description}
+        {>"components__list__description" data=data /}
+      {/data.list__description}
+    </div>
+  </header>
+
+  <div role="main">
+    <div class="container">
+      {#data.lead__image}
+        {>"components__partials__figure" data=data /}
+      {/data.lead__image}
+
+      {#data.main}
+        {>"components__{.name}" data=data /}
+      {/data.main}
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      {#data.aside}
+        {>"components__aside" data=data /}
+      {/data.aside}
+
+      {#data.list__generic}
+        {>"components__list__generic" data=data /}
+      {/data.list__generic}
+    </div>
+  </footer>
+</article>

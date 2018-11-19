@@ -1,42 +1,58 @@
 {
   "name": "aside",
-  "data": {
-    "components": [{
+  "data": [{
+    "heading": {
       "name": "heading",
       "data": {
-        "size": 2,
-        "content": "article.collection-1.title"
+        "content": "<a href=\"#\">Collection one</a>",
+        "size": 2
       }
-    }, {
+    },
+    "paragraph": {
+      "name": "paragraph",
+      "data": [{
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      }]
+    },
+    "list__generic": {
       "name": "list__generic",
       "data": {
         "type": "ol",
         "contents": [{
-          "content": "article.collection-1.article-1"
+          "content": "<a href=\"#\">Article one</a>"
         }, {
-          "content": "article.collection-1.article-2"
+          "content": "Article two"
         }, {
-          "content": "article.collection-1.article-3"
+          "content": "<a href=\"#\">Article three</a>"
         }]
       }
-    }, {
+    }
+  }, {
+    "heading": {
       "name": "heading",
       "data": {
-        "size": 2,
-        "content": "article.collection-2.title"
+        "content": "<a href=\"#\">Collection two</a>",
+        "size": 2
       }
-    }, {
+    },
+    "paragraph": {
+      "name": "paragraph",
+      "data": [{
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      }]
+    },
+    "list__generic": {
       "name": "list__generic",
       "data": {
         "type": "ol",
         "contents": [{
-          "content": "article.collection-2.article-1"
+          "content": "<a href=\"#\">Article one</a>"
         }, {
-          "content": "article.collection-2.article-2"
+          "content": "<a href=\"#\">Article two</a>"
         }, {
-          "content": "article.collection-2.article-3"
+          "content": "Article three"
         }]
       }
-    }]
-  }
+    }
+  }]
 }
