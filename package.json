@@ -37,7 +37,7 @@
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.0",
     "nyc": "^13.1.0",
-    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git#1.11.5",
+    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git#1.11.6",
     "postcss-cli": "^6.0.1",
     "selenium-webdriver": "^3.6.0",
     "shunter": "^4.12.0",
