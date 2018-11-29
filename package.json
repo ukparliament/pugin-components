@@ -42,11 +42,12 @@
     "selenium-webdriver": "^3.6.0",
     "shunter": "^4.12.0",
     "sinon": "^7.1.1",
-    "sinon-chai": "^3.2.0",
+    "sinon-chai": "^3.3.0",
     "uglify-js": "^3.4.9",
     "walk-sync": "^0.3.3"
   },
   "dependencies": {
+    "cryptiles": "^4.1.3",
     "i18next": "^11.10.2"
   }
 }
