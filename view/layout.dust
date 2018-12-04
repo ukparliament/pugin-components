@@ -17,7 +17,8 @@
     {/meta.components}
   </head>
   <body>
-    <script src="{@assetPath src="bodyClass.js"/}"></script>
+    {>"components__dom__body__head" /}
+
     {#header-components}
       {>"components__{name}" name=name data=data/}
     {/header-components}
