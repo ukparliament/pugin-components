@@ -1,6 +1,6 @@
 {! This will render a count div with a count nuber and explanitory text, both of which are compulsory. !}
 
 <div class="count">
-  <span class="count--number">{data.count-number}</span>
-  <span class="count--context">{data.count-context}</span>
+  <span class="count__number">{data.count-number}</span>
+  <span class="count__context">{data.count-context}</span>
 </div>
