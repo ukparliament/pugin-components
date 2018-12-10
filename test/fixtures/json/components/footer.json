@@ -1,18 +1,27 @@
 {
   "name": "footer",
   "data": {
-    "uk-parliament": "shared.footer.uk-parliament",
-    "components": [{
+    "heading": {
+      "name": "heading",
+      "data": {
+        "size": 2,
+        "content": "shared.footer.uk-parliament"
+      }
+    },
+    "list__generic": {
       "name": "list__generic",
       "data": {
         "type": "ul",
         "display": {
           "name": "partials__display",
-          "data": [{
-            "component": "list"
-          }]
+          "data": [
+            {
+              "component": "list"
+            }
+          ]
         },
-        "contents": [{
+        "contents": [
+          {
             "content": "shared.footer.current-website"
           },
           {
@@ -26,6 +35,6 @@
           }
         ]
       }
-    }]
+    }
   }
 }

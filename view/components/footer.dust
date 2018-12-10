@@ -1,8 +1,13 @@
 <footer>
   <div class="container">
     {! Only pass in components which need to be surrounded by footer tags. !}
-    {#data.components}
-      {>"components__{.name}" name=name data=data/}
-    {/data.components}
+
+    {#data.heading}
+      {>"components__heading" data=data /}
+    {/data.heading}
+
+    {#data.list__generic}
+      {>"components__list__generic" data=data /}
+    {/data.list__generic}
   </div>
 </footer>
