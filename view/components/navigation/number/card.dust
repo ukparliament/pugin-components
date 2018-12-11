@@ -4,7 +4,7 @@
   {^data.active}<a href="{data.url|s}">{/data.active}
   {?data.active}<span>{/data.active}
     <span>{@t key="shared.number-navigation.page" /}</span>
-    <span class="count">{data.number}</span>
+    <span class="count__number">{data.number}</span>
     <span>{@t key="{data.total-count}" /}</span>
   {?data.active}</span>{/data.active}
   {^data.active}</a>{/data.active}
