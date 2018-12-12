@@ -1,0 +1,24 @@
+{! This is the error layout template.  !}
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    {>"components__head__meta" meta=meta /}
+    {>"components__head__link" /}
+  </head>
+  <body>
+    {#header-components}
+      {>"components__{name}" name=name data=data/}
+    {/header-components}
+
+    <main>
+      {#main-components}
+        {>"components__{name}" name=name data=data/}
+      {/main-components}
+    </main>
+
+    {#footer-components}
+      {>"components__{name}" name=name data=data/}
+    {/footer-components}
+  </body>
+</html>

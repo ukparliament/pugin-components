@@ -1,0 +1,38 @@
+{
+  "layout": {
+    "template": "layout"
+  },
+  "meta": {
+    "title": "A test of our layout"
+  },
+  "header-components": [
+    {
+      "name": "paragraph",
+      "data": [
+        {
+          "content": "test header"
+        }
+      ]
+    }
+  ],
+  "main-components": [
+    {
+      "name": "paragraph",
+      "data": [
+        {
+          "content": "test main"
+        }
+      ]
+    }
+  ],
+  "footer-components": [
+    {
+      "name": "paragraph",
+      "data": [
+        {
+          "content": "test footer"
+        }
+      ]
+    }
+  ]
+}
