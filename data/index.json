@@ -1,0 +1,231 @@
+{
+  "layout": {
+    "template": "layout"
+  },
+  "meta": {
+    "title": "app.title",
+    "request-id": "|Pk5Jq3rkRal4MA==.",
+    "open-graph": {
+      "title": "Pugin components",
+      "original-url": "https://localhost/",
+      "image-url": "https://static.parliament.uk/assets-public/opengraph-oblong.png",
+      "image-width": "1200",
+      "image-height": "630",
+      "twitter-card": "summary_large_image"
+    },
+    "opensearch-description-url": "https://localhost/search/opensearch"
+  },
+  "header-components": [
+    {
+      "name": "link",
+      "data": {
+        "link": "#content",
+        "display": {
+          "name": "partials__display",
+          "data": [
+            {
+              "component": "skip-to-content"
+            }
+          ]
+        },
+        "selector": "skiplink",
+        "content": "shared.header.skip-to-content"
+      }
+    },
+    {
+      "name": "status__banner",
+      "data": {
+        "display": {
+          "name": "partials__display",
+          "data": [
+            {
+              "component": "status",
+              "variant": "banner"
+            },
+            {
+              "component": "theme",
+              "variant": "caution"
+            },
+            {
+              "component": "cookie"
+            }
+          ]
+        },
+        "selector": "cookie",
+        "components": [
+          {
+            "name": "paragraph",
+            "data": [
+              {
+                "content": "shared.header.cookie-banner-text",
+                "data": {
+                  "link": "/meta/cookie-policy"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "status__banner",
+      "data": {
+        "display": {
+          "name": "partials__display",
+          "data": [
+            {
+              "component": "status",
+              "variant": "banner"
+            }
+          ]
+        },
+        "components": [
+          {
+            "name": "paragraph",
+            "data": [
+              {
+                "content": "shared.header.beta-status"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "header",
+      "data": {
+        "components": [
+          {
+            "name": "link",
+            "data": {
+              "link": "/",
+              "display": {
+                "name": "partials__display",
+                "data": [
+                  {
+                    "component": "uk_parliament"
+                  }
+                ]
+              },
+              "label": "shared.header.label",
+              "components": [
+                {
+                  "name": "icon__uk-parliament",
+                  "data": "shared.header.label"
+                }
+              ]
+            }
+          },
+          {
+            "name": "form__search",
+            "data": {
+              "global": true,
+              "hide-label": true,
+              "label": "search.label",
+              "components": [
+                {
+                  "name": "icon__search",
+                  "data": "search.search-icon"
+                }
+              ],
+              "search-action": "#"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "main-components": [
+    {
+      "name": "section__primary",
+      "data": {
+        "content-flag": true,
+        "components": [
+          {
+            "name": "heading1",
+            "data": {
+              "heading": {
+                "content": "app.title"
+              },
+              "context": {
+                "content": "app.description"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "section__section",
+      "data": {
+        "components": [
+          {
+            "name": "heading",
+            "data": {
+              "content": "app.home.subheading#1",
+              "size": 2
+            }
+          },
+          {
+            "name": "list__generic",
+            "data": {
+              "type": "ul",
+              "contents": [
+                {
+                  "content": "view.components.card.index",
+                  "data": {
+                    "link": "/card"
+                  }
+                },
+                {
+                  "content": "view.components.form.index",
+                  "data": {
+                    "link": "/form"
+                  }
+                },
+                {
+                  "content": "view.components.heading.index",
+                  "data": {
+                    "link": "/heading"
+                  }
+                },
+                {
+                  "content": "view.components.icon.index",
+                  "data": {
+                    "link": "/icon"
+                  }
+                },
+                {
+                  "content": "view.components.list.index",
+                  "data": {
+                    "link": "/list"
+                  }
+                },
+                {
+                  "content": "view.components.navigation.index",
+                  "data": {
+                    "link": "/navigation"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "footer-components": [
+    {
+      "name": "footer",
+      "data": {
+        "heading": {
+          "name": "heading",
+          "data": {
+            "size": 2,
+            "content": "shared.footer.uk-parliament"
+          }
+        }
+      }
+    }
+  ]
+}

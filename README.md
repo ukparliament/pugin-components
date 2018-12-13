@@ -10,6 +10,7 @@
 
 - [Requirements](#requirements)
 - [Quick start](#quick-start)
+- [Running the application](#running-the-application)
 - [Using the Library](#using-the-library)
 - [Running tests on single files or directories](#running-tests-on-single-files-or-directories)
 - [i18next Note](#i18next-note)
@@ -33,14 +34,24 @@ npm install
 npm cache clean --force && npm test
 ```
 
-## Using the Library  
-To use the package, you need to add it and save it into the list of dependencies in your package.json file:  
+## Running the application
+To run the application locally, run:
+
+```bash
+make develop
+```
+This runs foreman that starts the app and shunter erve
+
+The application should now be available at [http://localhost:5500][local].
+
+## Using the Library
+To use the package, you need to add it and save it into the list of dependencies in your package.json file:
 
 ```bash
 npm install --save pugin-components
 ```
 
-Then go to your shunter application's config (for example app.js or index.js). Add modules to the file, like the example below:  
+Then go to your shunter application's config (for example app.js or index.js). Add modules to the file, like the example below:
 ```
 const app = shunter({
     path: {
@@ -50,11 +61,11 @@ const app = shunter({
     jsonViewParameter: 'json',
     modules: ['pugin-components']
 });
-```  
-You should now be able to call on the components as if they were in a view folder in your root directory.  
+```
+You should now be able to call on the components as if they were in a view folder in your root directory.
 
 ## Updating versions of Pugin assets (CSS/JS)
-The `make build` task compiles the css and javascript assets from [Pugin][pugin]. This task is used when you would like to specify a different tag release of [Pugin][pugin] as to what was originally installed.  
+The `make build` task compiles the css and javascript assets from [Pugin][pugin]. This task is used when you would like to specify a different tag release of [Pugin][pugin] as to what was originally installed.
 
 For example, in the package.json amend `parliamentuk-pugin` to another tag release:
 ```bash
@@ -86,18 +97,18 @@ Passing in data to the translation with double moustaches sanitises input. If yo
 The following translation:
 ```json
 "cookie-policy": "<a href='{{link}}'>Cookie Policy</a>"
-```  
-Will be rendered incorrectly as:  
+```
+Will be rendered incorrectly as:
 ```html
 <a href='*&meta*&cookie'>Cookie Policy</a>
-```  
+```
 
 ### Prefixing the variable name with a hyphen
 The following translation:
 ```json
 "cookie-policy": "<a href='{{-link}}'>Cookie Policy</a>"
 ```
-Will be rendered correctly as:  
+Will be rendered correctly as:
 ```html
 <a href='/meta/cookie'>Cookie Policy</a>
 ```
@@ -122,7 +133,7 @@ If you wish to submit a bug fix or feature, you can create a pull request and it
 [node]: https://nodejs.org/
 [node-version]: https://github.com/ukparliament/pugin-components/blob/master/.node-version
 [npm]: https://www.npmjs.com/
-[local]: http://localhost:5400
+[local]: http://localhost:5500
 [mocha]: https://mochajs.org/
 
 [info-travis]:   https://travis-ci.org/ukparliament/pugin-components

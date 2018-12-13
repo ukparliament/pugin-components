@@ -1,0 +1,428 @@
+{
+  "layout": {
+    "template": "layout"
+  },
+  "meta": {
+    "title": "view.components.card.title",
+    "request-id": "|Pk5Jq3rkRal4MA==.",
+    "open-graph": {
+      "title": "Card",
+      "original-url": "https://localhost/",
+      "image-url": "https://static.parliament.uk/assets-public/opengraph-oblong.png",
+      "image-width": "1200",
+      "image-height": "630",
+      "twitter-card": "summary_large_image"
+    },
+    "opensearch-description-url": "https://localhost/search/opensearch"
+  },
+  "header-components": [
+    {
+      "name": "link",
+      "data": {
+        "link": "#content",
+        "display": {
+          "name": "partials__display",
+          "data": [
+            {
+              "component": "skip-to-content"
+            }
+          ]
+        },
+        "selector": "skiplink",
+        "content": "shared.header.skip-to-content"
+      }
+    },
+    {
+      "name": "status__banner",
+      "data": {
+        "display": {
+          "name": "partials__display",
+          "data": [
+            {
+              "component": "status",
+              "variant": "banner"
+            },
+            {
+              "component": "theme",
+              "variant": "caution"
+            },
+            {
+              "component": "cookie"
+            }
+          ]
+        },
+        "selector": "cookie",
+        "components": [
+          {
+            "name": "paragraph",
+            "data": [
+              {
+                "content": "shared.header.cookie-banner-text",
+                "data": {
+                  "link": "/meta/cookie-policy"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "status__banner",
+      "data": {
+        "display": {
+          "name": "partials__display",
+          "data": [
+            {
+              "component": "status",
+              "variant": "banner"
+            }
+          ]
+        },
+        "components": [
+          {
+            "name": "paragraph",
+            "data": [
+              {
+                "content": "shared.header.beta-status"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "header",
+      "data": {
+        "components": [
+          {
+            "name": "link",
+            "data": {
+              "link": "/",
+              "display": {
+                "name": "partials__display",
+                "data": [
+                  {
+                    "component": "uk_parliament"
+                  }
+                ]
+              },
+              "label": "shared.header.label",
+              "components": [
+                {
+                  "name": "icon__uk-parliament",
+                  "data": "shared.header.label"
+                }
+              ]
+            }
+          },
+          {
+            "name": "form__search",
+            "data": {
+              "global": true,
+              "hide-label": true,
+              "label": "search.label",
+              "components": [
+                {
+                  "name": "icon__search",
+                  "data": "search.search-icon"
+                }
+              ],
+              "search-action": "#"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "main-components": [
+    {
+      "name": "section__primary",
+      "data": {
+        "content-flag": true,
+        "components": [
+          {
+            "name": "heading1",
+            "data": {
+              "subheading": {
+                "content": "view.components.title"
+              },
+              "heading": {
+                "content": "view.components.card.heading"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "section__section",
+      "data": {
+        "components": [
+          {
+            "name": "heading",
+            "data": {
+              "content": "Generic",
+              "size": 2
+            }
+          },
+          {
+            "name": "list__generic",
+            "data": {
+              "type": "ol",
+              "display": {
+                "name": "partials__display",
+                "data": [
+                  {
+                    "component": "list",
+                    "variant": "block"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "name": "card__generic",
+                  "data": {
+                    "figure": {
+                      "name": "partials__figure",
+                      "data": {
+                        "display": {
+                          "name": "partials__display",
+                          "data": [
+                            {
+                              "component": "avatar",
+                              "variant": "round"
+                            }
+                          ]
+                        },
+                        "link": "#",
+                        "aria-hidden": true,
+                        "tab-index": true,
+                        "source-media": "(min-width: 480px)",
+                        "source-srcset": "https://static.parliament.uk/pugin/images/placeholder_members_image.png",
+                        "source-srcset-2": "https://static.parliament.uk/pugin/images/placeholder_members_image.png",
+                        "alt-text": "placeholder image",
+                        "source": "https://static.parliament.uk/pugin/images/placeholder_members_image.png"
+                      }
+                    },
+                    "heading": {
+                      "name": "heading",
+                      "data": {
+                        "content": "<a href='#'>Diane Abbott</a>",
+                        "size": 2
+                      }
+                    },
+                    "paragraph": {
+                      "name": "paragraph",
+                      "data": [
+                        {
+                          "content": "Diane Abbott, MP for Hackney North and Stoke Newington and Shadow Home Secretary, Labour."
+                        }
+                      ]
+                    },
+                    "list-description": {
+                      "name": "list__description",
+                      "data": {
+                        "items": [
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-1"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-1"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-2"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-2"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-3"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-3"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-4"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-4"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-5"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-5"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-6"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-6"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-7"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-7"
+                              }
+                            ]
+                          },
+                          {
+                            "term": {
+                              "content": "view.components.list.meta.term-8"
+                            },
+                            "description": [
+                              {
+                                "content": "view.components.list.meta.list-8"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "list-generic": {
+                      "name": "list__generic",
+                      "data": {
+                        "type": "ul",
+                        "contents": [
+                          {
+                            "content": "view.components.list.meta.list-1"
+                          },
+                          {
+                            "content": "view.components.list.meta.list-2",
+                            "data": {
+                              "link": "#"
+                            }
+                          },
+                          {
+                            "content": "view.components.list.meta.list-3"
+                          }
+                        ]
+                      }
+                    },
+                    "link-button": {
+                      "name": "partials__link-button",
+                      "data": {
+                        "download": true,
+                        "link": "#",
+                        "text": "Download link",
+                        "display": {
+                          "name": "partials__display",
+                          "data": [
+                            {
+                              "component": "btn",
+                              "variant": "primary"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "count": {
+                      "name": "partials__count",
+                      "data": {
+                        "count-number": 63,
+                        "count-context": "count"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "heading",
+            "data": {
+              "content": "Search result",
+              "size": 2
+            }
+          },
+          {
+            "name": "list__generic",
+            "data": {
+              "type": "ol",
+              "display": {
+                "name": "partials__display",
+                "data": [
+                  {
+                    "component": "list",
+                    "variant": "block"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "name": "card__search__search-result",
+                  "data": {
+                    "heading-text": "<b>Diane Abbott</b> - UK Parliament",
+                    "url": "https://beta.parliament.uk",
+                    "hints": [
+                      {
+                        "name": "partials__hint",
+                        "data": {
+                          "display": {
+                            "name": "partials__display",
+                            "data": [
+                              {
+                                "component": "theme",
+                                "variant": "grey-4",
+                                "content": "label"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ],
+                    "short-url": "https://beta.parliament.uk",
+                    "paragraph-content": "Diane Abbott, MP for Hackney North and Stoke Newington and Shadow Home Secretary, Labour."
+                  }
+                }
+              ]
+            }
+          }
+
+        ]
+      }
+    }
+  ],
+  "footer-components": [
+    {
+      "name": "footer",
+      "data": {
+        "heading": {
+          "name": "heading",
+          "data": {
+            "size": 2,
+            "content": "shared.footer.uk-parliament"
+          }
+        }
+      }
+    }
+  ]
+}

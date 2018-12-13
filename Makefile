@@ -21,6 +21,8 @@ REPO=pugin-components
 LATEST_REL=$(GITHUB_API)/repos/$(ORG)/$(REPO)/releases
 REL_TAG=$(shell curl -s $(LATEST_REL) | jq -r '.[0].tag_name')
 
+CONTAINER_PORT = 5500
+
 install:
 	npm install
 
@@ -38,6 +40,15 @@ build: pugin
 
 test:
 	npm test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
+develop:
+	env PORT=$(CONTAINER_PORT) ./node_modules/foreman/nf.js --procfile ProcfileForeman start
+
+serve:
+	npm run serve
+
+json: # Run task to beautify *.json files
+	./jsbeautify.sh
 
 checkout_to_release:
 	git checkout -b release $(REL_TAG)

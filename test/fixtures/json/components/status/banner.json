@@ -30,7 +30,7 @@
             ],
             "contents": [
               {
-                "content": "shared.header.pages-being-tested"
+                "content": "shared.header.beta-status"
                 },
                 {
                   "content": "shared.header.current-website"

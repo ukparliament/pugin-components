@@ -2,7 +2,7 @@
 
   <form {?data.search-action}action="{data.search-action}" method="get"{/data.search-action}>
     <div class="input-group">
-      <label class="sr-only" for="search_box">{@t key="{data.label}" /}</label>
+      <label {?data.hide-label}class="sr-only"{/data.hide-label} for="search_box">{@t key="{data.label}" /}</label>
       <input id="search_box" maxlength="1000" name="q" pattern="^(?!.*<script|<Script).*$" aria-label="enter a search term" autocomplete="off" required="" type="search" {?data.value}value="{data.value}"{/data.value}>
       <button aria-label="submit search" class="btn--white" type="submit">
         {>"components__icon__search" name=name/}
