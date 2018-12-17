@@ -1,6 +1,6 @@
 {
   "name": "pugin-components",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A shunter npm package containing dust components for beta.parliament.uk",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "node-sass": "^4.10.0",
     "normalize.css": "^8.0.1",
     "nyc": "^13.1.0",
-    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git#1.11.7",
+    "parliamentuk-pugin": "git+https://github.com/ukparliament/parliament.uk-pugin.git#1.11.9",
     "postcss-cli": "^6.0.1",
     "selenium-webdriver": "^4.0.0-alpha.1",
     "shunter": "^4.12.0",
