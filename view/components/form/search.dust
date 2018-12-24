@@ -10,7 +10,7 @@
     </div>
   </form>
 {?data.global}
-  <a aria-hidden="true" aria-label="open search" class="btn--toggle" href="/search">
+  <a aria-hidden="true" aria-label="open search" href="/search">
     {>"components__icon__search" name=name search-toggle="{true}"/}
   </a>
 {/data.global}
