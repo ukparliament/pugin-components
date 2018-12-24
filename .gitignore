@@ -3,3 +3,6 @@
 /.nyc_output
 /coverage
 /out
+/log
+/public
+shunter.pid

@@ -1,4 +1,11 @@
 {
+  "app": {
+    "title": "Pugin Components",
+    "description": "The node module which contains the components for Augustus.",
+    "home": {
+      "subheading#1": "Components"
+    }
+  },
 	"shared": {
 		"meta": {
 			"title": "UK Parliament"
@@ -7,7 +14,7 @@
 			"skip-to-content": "Skip to main content",
 			"cookie-banner-text": "Parliament.uk uses cookies to make the site simpler. <a href='{{-link}}'>Find out more about cookies</a>",
 			"beta": "beta",
-			"pages-being-tested": "These pages are being tested. <a href='http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/'>Give feedback</a> to help improve them.",
+			"beta-status": "These pages are being tested. <a href='http://www.smartsurvey.co.uk/s/ukparliament-beta-website-feedback/'>Give feedback</a> to help improve them.",
 			"current-website": "Go to <a href='http://www.parliament.uk'>current website</a>",
 			"label": "UK Parliament"
 		},
@@ -101,5 +108,58 @@
 			"print": "<a href='#'>Print page</a>",
 			"download": "<a href='#'>Download as PDF</a>"
 		}
-	}
+  },
+  "view": {
+    "components": {
+      "title": "Components",
+      "card": {
+        "title": "$t(view.components.card.heading) - $t(app.title)",
+        "heading": "Card",
+        "index": "<a href='{{-link}}'>$t(view.components.card.heading)</a>"
+      },
+      "form": {
+        "title": "$t(view.components.form.heading) - $t(app.title)",
+        "heading": "Form",
+        "index": "<a href='{{-link}}'>$t(view.components.form.heading)</a>"
+      },
+      "heading": {
+        "title": "$t(view.components.heading.heading) - $t(app.title)",
+        "heading": "Heading",
+        "index": "<a href='{{-link}}'>$t(view.components.heading.heading)</a>"
+      },
+      "icon": {
+        "title": "$t(view.components.icon.heading) - $t(app.title)",
+        "heading": "Icon",
+        "index": "<a href='{{-link}}'>$t(view.components.icon.heading)</a>"
+      },
+      "list": {
+        "title": "$t(view.components.list.heading) - $t(app.title)",
+        "heading": "List",
+        "index": "<a href='{{-link}}'>$t(view.components.list.heading)</a>",
+        "meta": {
+          "term-1": "Name",
+          "list-1": "Diane Abbott",
+          "term-2": "Email",
+          "list-2": "<a href='{{-link}}'>diane.abbott.office@parliament.uk</a>",
+          "term-3": "Phone",
+          "list-3": "<a href='{{-link}}'>020 7219 4426</a>",
+          "term-4": "Address",
+          "list-4": "House of Commons, London, SW1A 0AAt",
+          "term-5": "Constituency",
+          "list-5": "<a href='{{-link}}'>Hackney North and Stoke Newington</a>",
+          "term-6": "Place",
+          "list-6": "Houses of Parliament",
+          "term-7": "Lower House",
+          "list-7": "<a href='{{-link}}'>House of Commons</a>",
+          "term-8": "Upper House",
+          "list-8": "<a href='{{-link}}'>House of Lords</a>"
+        }
+      },
+      "navigation": {
+        "title": "$t(view.components.navigation.heading) - $t(app.title)",
+        "heading": "Navigation",
+        "index": "<a href='{{-link}}'>$t(view.components.navigation.heading)</a>"
+      }
+    }
+  }
 }
