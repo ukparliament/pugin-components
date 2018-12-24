@@ -1,0 +1,10 @@
+{! Though this does not use <section> tags it is considered a section component. !}
+{! This main component takes and wraps an array of other components. !}
+
+<div role="main">
+  <div class="container">
+    {#data}
+      {@t key="{content|s}" data=data /}
+    {/data}
+  </div>
+</div>

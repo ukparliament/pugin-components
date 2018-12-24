@@ -17,17 +17,13 @@
     </div>
   </header>
 
-  <div role="main">
-    <div class="container">
-      {#data.lead__image}
-        {>"components__partials__figure" data=data /}
-      {/data.lead__image}
+  {#data.lead__image}
+    {>"components__partials__figure" data=data /}
+  {/data.lead__image}
 
-      {#data.main}
-        {>"components__{.name}" data=data /}
-      {/data.main}
-    </div>
-  </div>
+  {#data.section__main}
+    {>"components__section__main" data=data /}
+  {/data.section__main}
 
   <footer>
     <div class="container">

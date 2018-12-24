@@ -80,12 +80,7 @@
 			}
 		},
 		"figcaption": "Lead image (optional) <a href='#'>example link to resource</a>",
-		"paragraph-1": "You can speak in debates in the Chamber and Westminster Hall. You should be aware of the Rules of behaviour and courtesies in the House, issued by the Speaker, before you do so.",
-		"paragraph-2": "The House reaches its decisions or highlights its opinions by debating motions. MPs argue for or against a specific motion and then reach a decision, with or without the need for a vote. Motions are listed on the Order Paper, along with the names of the MPs who support them.",
-		"paragraph-3": "A general motion is neutrally worded. It usually begins, “That this House has considered”. It lets the House discuss an issue without giving an opinion or taking action on it. You can’t amend this kind of motion.",
-		"paragraph-4": "A substantive motion calls on the House to take action or express an opinion. You can amend a substantive motion.",
-		"paragraph-5": "Although most motions that are debated are tabled by the Government, there are opportunities for backbenchers to hold debates too:",
-		"paragraph-6": "The main Opposition parties get a chance to hold debates on their motions on Opposition days.",
+		"content-body": "<p>You can speak in debates in the Chamber and Westminster Hall. You should be aware of the Rules of behaviour and courtesies in the House, issued by the Speaker, before you do so.</p><p>The House reaches its decisions or highlights its opinions by debating motions. MPs argue for or against a specific motion and then reach a decision, with or without the need for a vote. Motions are listed on the Order Paper, along with the names of the MPs who support them.</p><p>A general motion is neutrally worded. It usually begins, “That this House has considered”. It lets the House discuss an issue without giving an opinion or taking action on it. You can’t amend this kind of motion.</p><p>A substantive motion calls on the House to take action or express an opinion. You can amend a substantive motion.</p><p>Although most motions that are debated are tabled by the Government, there are opportunities for backbenchers to hold debates too:</p><p>The main Opposition parties get a chance to hold debates on their motions on Opposition days.</p>",
 		"list-item-1": "adjournment debates",
 		"list-item-2": "Westminster Hall debates",
 		"list-item-3": "Backbench Business Committee debates",
