@@ -120,7 +120,6 @@
             "name": "form__search",
             "data": {
               "global": true,
-              "hide-label": true,
               "label": "search.label",
               "components": [
                 {
